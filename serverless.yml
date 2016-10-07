@@ -1,0 +1,12 @@
+service: serverless-facebook-messenger-bot
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+
+functions:
+  webhook:
+    handler: handler.webhook
+    events:
+      - http: GET webhook
+      - http: POST webhook
