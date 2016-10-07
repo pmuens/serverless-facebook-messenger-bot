@@ -6,6 +6,8 @@ Serverless service which provides you a basic Facebook Messenger Chatbot scaffol
 
 Make sure that you use Serverless v1.
 
+**Note:** You might want to look take a look at the Facebook Messenger Platform [quickstart guide](https://developers.facebook.com/docs/messenger-platform/quickstart) or the Facebook Messenger Platform [in-depth documentation](https://developers.facebook.com/docs/messenger-platform/product-overview/setup).
+
 1. Run `npm install` to install all the necessary npm packages
 2. Setup your Facebook Messenger Chatbot app
 3. Setup the Facebook Fanpage for your Chatbot
