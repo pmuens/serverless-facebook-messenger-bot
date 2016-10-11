@@ -3,6 +3,8 @@ service: serverless-facebook-messenger-bot
 provider:
   name: aws
   runtime: nodejs4.3
+  region: us-east-1
+  stage: dev
 
 functions:
   webhook:
