@@ -6,10 +6,9 @@ module.exports.webhook = (event, context, callback) => {
   if (event.method === 'GET') {
     // Facebook app verification
     if (event.query['hub.verify_token'] === '<strong-token>' && event.query['hub.challenge']) {
-      return callback(null, parseInt(event.query['hub.challenge']));
-    } else {
-      return callback('Invalid token');
+      callback(null, parseInt(event.query['hub.challenge']));
     }
+    callback('Invalid token');
   }
 
   if (event.method === 'POST') {
